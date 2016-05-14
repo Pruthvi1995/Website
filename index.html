@@ -141,6 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  </script>
 					<div class="slider">
 					<ul class="rslides" id="slider1">
+						<li><img src="images/lineRobot.gif" alt="" ></li>
 					  <li><img src="images/line1.jpg" alt="" ></li>
 					  <li><img src="images/line2.jpg" alt="" ></li>
 					  <li><img src="images/line3.jpg" alt="" ></li>
@@ -151,12 +152,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h4 class="prome">Line Following Robot</h4>
 						<ul class="circle-in">
 							<li>C</li>
+							<li>Op Amp</li>
+							<li>Soldering</li>
 						</ul>
 					<div class="clearfix"> </div>
 					</div>
 					<div class="screen">
 						<span>Description</span>
-						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. The sun shone bright and the birds sang sweetly, and Dorothy did not feel nearly so bad as you might think a little girl would who had been suddenly whisked away from her own country and set down in the midst of a strange land.</p>
+						<p>The line following robot was developed for a second year circuits course lab. The robot is able to follow any path outlined by a black tape, even if the path is not continuous. The robot is also able to detect magnetic fields in its path. The robots requirements were to follow a path from start to finish without going off track within a certain period of time, and at the same time detect magnets on the track and react according to the magnet’s polarity. If the magnets polarity was positive, then the robot should stop for 7 seconds and blink an LED, and if the magnets polarity was negative, then the robot should stop for 7 seconds with an LED constantly on. During the final demonstration, the robot was able to successfully complete all the requirements and received a perfect score. </p>
+						<span>Implementation</span>
+						<p>The line following robot utilized an IR LED and a pair of photodiodes connected to a difference amplifier to detect the difference in light reflected on each side of the IR LED. The difference amplifier was first designed on paper by calculating values of all the required components (resistors), and then the components were soldered onto a custom PCB to create the amplifier. The magnet detection circuit was implemented in a similar manner, except instead of a difference amplifier, a non-inverting amplifier was used. In order to detect the polarity of a magnet, the amplifier circuit was calibrated to output ~2.5V when there was no magnetic field, increase gradually to 4.0V when a positive field was detected, and decrease to 1.0V when a negative polarity was detected. The circuit was calibrated by changing values of the feedback resistor. After the hardware was implemented, the robot was implemented in C to read input values from the difference amplifier. If the value was below a certain threshold, the robot would turn left (thresholds were determined by measuring the output voltage of the difference amplifier when the robot should turn left and right). On the other hand, if the value was above a threshold, the robot would turn right. </P>
 					</div>
 					</div>
 				</div>
@@ -167,7 +172,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			// You can also use "$(window).load(function() {"
 			$(function () {
 				// Slideshow 1
-				$("#slider1").responsiveSlides({
+				$("#slider2").responsiveSlides({
 				 auto: true,
 				 nav: true,
 				 speed: 500,
@@ -176,8 +181,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 			</script>
 					<div class="slider">
-					<ul class="rslides" id="slider1">
+					<ul class="rslides" id="slider2">
 						<li><img src="images/snake.jpg" alt=""></li>
+						<li><img src="images/keilboard.jpg" alt="" style="height:50%"></li>
 					</ul>
 					</div>
 					<div class="sit">
@@ -192,8 +198,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 					</div>
 					<div class="screen">
-						<span>Creating bonds away from our screens</span>
-						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. The sun shone bright and the birds sang sweetly, and Dorothy did not feel nearly so bad as you might think a little girl would who had been suddenly whisked away from her own country and set down in the midst of a strange land.</p>
+						<span>Description</span>
+						<p></p>
+						<span>Implementation</span>
 						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. </p>
 					</div>
 						<div class="near">
