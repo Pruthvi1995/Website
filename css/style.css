@@ -262,11 +262,14 @@ a.down-in{
 	padding: 9em 0;
 	display: none;
 	position: absolute;
-	top: 32px;
-	width: 92%;
-	height: 87%;
+	top: 15px;
+	bottom: 15px;
+	left: 15px;
+	right:15px	;
+	/*width: 92%;
+	height: 87%;*/
 	background:rgba(210, 89, 80, 0.88);
-	left: 23px;
+
 }
 .simple p {
 	font-size: 1.1em;
