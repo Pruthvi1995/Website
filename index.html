@@ -111,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						    </div></a>
 					</div>
 					<div class="work-grid1">
-						<a class="popup-with-zoom-anim" href="#vendingmaching"><img class="img-responsive motor-in" src="images/pic.jpg" alt="" >
+						<a class="popup-with-zoom-anim" href="#vendingmaching"><img class="img-responsive motor-in" src="images/vend1.jpg" alt="" >
 							<div class="simple">
 									<h5>Vending Machine</h5>
 								</div></a>
@@ -141,10 +141,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  </script>
 					<div class="slider">
 					<ul class="rslides" id="slider1">
-						<li><img src="images/lineRobot.gif" alt="" ></li>
-					  <li><img src="images/line1.jpg" alt="" ></li>
-					  <li><img src="images/line2.jpg" alt="" ></li>
-					  <li><img src="images/line3.jpg" alt="" ></li>
+						<li><img src="images/lineRobot.gif" alt="" style="height:600px"></li>
+					  <li><img src="images/line1.jpg" alt="" style="height:600px"></li>
+					  <li><img src="images/line2.jpg" alt="" style="height:600px"></li>
+					  <li><img src="images/line3.jpg" alt="" style="height:600px"></li>
 					</ul>
 					</div>
 					<div class="sit">
@@ -160,8 +160,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="screen">
 						<span>Description</span>
 						<p>The line following robot was developed for a second year circuits course lab. The robot is able to follow any path outlined by a black tape, even if the path is not continuous. The robot is also able to detect magnetic fields in its path. The robots requirements were to follow a path from start to finish without going off track within a certain period of time, and at the same time detect magnets on the track and react according to the magnet’s polarity. If the magnets polarity was positive, then the robot should stop for 7 seconds and blink an LED, and if the magnets polarity was negative, then the robot should stop for 7 seconds with an LED constantly on. During the final demonstration, the robot was able to successfully complete all the requirements and received a perfect score. </p>
-						<span>Implementation</span>
-						<p>The line following robot utilized an IR LED and a pair of photodiodes connected to a difference amplifier to detect the difference in light reflected on each side of the IR LED. The difference amplifier was first designed on paper by calculating values of all the required components (resistors), and then the components were soldered onto a custom PCB to create the amplifier. The magnet detection circuit was implemented in a similar manner, except instead of a difference amplifier, a non-inverting amplifier was used. In order to detect the polarity of a magnet, the amplifier circuit was calibrated to output ~2.5V when there was no magnetic field, increase gradually to 4.0V when a positive field was detected, and decrease to 1.0V when a negative polarity was detected. The circuit was calibrated by changing values of the feedback resistor. After the hardware was implemented, the robot was implemented in C to read input values from the difference amplifier. If the value was below a certain threshold, the robot would turn left (thresholds were determined by measuring the output voltage of the difference amplifier when the robot should turn left and right). On the other hand, if the value was above a threshold, the robot would turn right. </P>
 					</div>
 					</div>
 				</div>
@@ -182,32 +180,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</script>
 					<div class="slider">
 					<ul class="rslides" id="slider2">
-						<li><img src="images/snake.jpg" alt=""></li>
-						<li><img src="images/keilboard.jpg" alt="" style="height:50%"></li>
+						<li><img src="images/snake.jpg" alt="" style="height:600px"></li>
+						<li><img src="images/keilboard.jpg" alt="" style="height:600px"></li>
 					</ul>
 					</div>
 					<div class="sit">
-						<h6>Typography</h6>
 					<div class="sit-in">
-						<h4 class="prome">Promesas de Tierra</h4>
+						<h4 class="prome">Snakes</h4>
 						<ul class="circle-in">
-							<li>HTML 5</li>
-							<li>CSS3</li>
-							<li>JQUREY</li>
+							<li>C</li>
+							<li>RTOS</li>
 						</ul>
 					<div class="clearfix"> </div>
 					</div>
 					<div class="screen">
 						<span>Description</span>
-						<p></p>
-						<span>Implementation</span>
-						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. </p>
+						<p>Snakes was developed using the C language in Keil’s uVision IDE. The game was developed to run on a Keil evaluation board running an ARM Cortex-M3 processor. Several hardware peripherals were used for the game, such as a joystick to control the snake (tight polling), a push button to activate/deactivate the pause menu (hardware interrupt), and an array of LEDs to display the user’s score in binary. In order to both operate the game (check for game over conditions, create new ‘food’ blocks, etc.) and read the user’s inputs using tight polling at the same time, multithreading was used, with one task continuously checking for and applying user inputs and one task operating the game. Semaphores were used in the pause menu to pause the game when user activates the menu. Overall, the game worked perfectly as it should.</p>
 					</div>
-						<div class="near">
-							<small class="near-left">04 December 2014</small>
-							<a href="#" class="near-right"> SHARE</a>
-							<div class="clearfix"> </div>
-						</div>
 					</div>
 				</div>
 				<div id="obstacle" class="mfp-hide innercontent">
@@ -217,7 +206,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			// You can also use "$(window).load(function() {"
 			$(function () {
 				// Slideshow 1
-				$("#slider1").responsiveSlides({
+				$("#slider3").responsiveSlides({
 				 auto: true,
 				 nav: true,
 				 speed: 500,
@@ -226,7 +215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 			</script>
 					<div class="slider">
-					<ul class="rslides" id="slider1">
+					<ul class="rslides" id="slider3">
 						<li><img src="images/ba1.jpg" alt=""></li>
 						<li><img src="images/ba1.jpg" alt=""></li>
 						<li><img src="images/ba1.jpg" alt=""></li>
@@ -246,13 +235,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="screen">
 						<span>Creating bonds away from our screens</span>
 						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. The sun shone bright and the birds sang sweetly, and Dorothy did not feel nearly so bad as you might think a little girl would who had been suddenly whisked away from her own country and set down in the midst of a strange land.</p>
-						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. </p>
 					</div>
-						<div class="near">
-							<small class="near-left">04 December 2014</small>
-							<a href="#" class="near-right"> SHARE</a>
-							<div class="clearfix"> </div>
-						</div>
 					</div>
 				</div>
 				<div id="vendingmaching" class="mfp-hide innercontent">
@@ -262,7 +245,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			// You can also use "$(window).load(function() {"
 			$(function () {
 				// Slideshow 1
-				$("#slider1").responsiveSlides({
+				$("#slider4").responsiveSlides({
 				 auto: true,
 				 nav: true,
 				 speed: 500,
@@ -271,33 +254,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 			</script>
 					<div class="slider">
-					<ul class="rslides" id="slider1">
-						<li><img src="images/ba1.jpg" alt=""></li>
-						<li><img src="images/ba1.jpg" alt=""></li>
-						<li><img src="images/ba1.jpg" alt=""></li>
+					<ul class="rslides" id="slider4">
+						<li><img src="images/vend1.jpg" alt="" style="height:600px"></li>
+						<li><img src="images/vend2.jpg" alt="" style="height:600px"></li>
+						<li><img src="images/vend3.png" alt="" style="height:600px"></li>
 					</ul>
 					</div>
 					<div class="sit">
-						<h6>Typography</h6>
 					<div class="sit-in">
-						<h4 class="prome">Promesas de Tierra</h4>
+						<h4 class="prome">Smart Vendor</h4>
 						<ul class="circle-in">
-							<li>HTML 5</li>
-							<li>CSS3</li>
-							<li>JQUREY</li>
+							<li>C</li>
+							<li>RobotC</li>
+							<li>SolidWorks</li>
 						</ul>
 					<div class="clearfix"> </div>
 					</div>
 					<div class="screen">
-						<span>Creating bonds away from our screens</span>
-						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. The sun shone bright and the birds sang sweetly, and Dorothy did not feel nearly so bad as you might think a little girl would who had been suddenly whisked away from her own country and set down in the midst of a strange land.</p>
-						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. </p>
+						<span>Description</span>
+						<p>Smart Vendor is a vending machine built using LEGO Mindstorms. The machine was created for a first year design project. The machine used different sensors, including a sonar sensor, a push button, and a color sensor in order to vend objects to users. The sonar sensor was used to detect if there is a person standing in front of the machine. If an object was detected, the machine would turn on. The user would then select an item from the menu, and insert the correct amount of currency in the form of colored poker chips, each of which had different values. The machine used a color sensor to detect which color was inserted and calculate whether the user inserted the right amount of currency. The machine would then use a custom built gantry system to push the object out of the shelf and into the dispensing window. The machine was programmed using Robot-C, a C based language with additional support for robot specific functions. The robot’s gantry system was designed using SOLIDWORKS and then manufactured using scrap metal based on the SOLIDWORKS design.</p>
 					</div>
-						<div class="near">
-							<small class="near-left">04 December 2014</small>
-							<a href="#" class="near-right"> SHARE</a>
-							<div class="clearfix"> </div>
-						</div>
 					</div>
 				</div>
 				 <script>
