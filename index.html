@@ -23,8 +23,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--fonts-->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 <!--//fonts-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<!-- <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script> -->
 <script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){
@@ -93,27 +93,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>PROJECTS</h3>
 				<div class="work-in">
 					<div class="work-grid">
-						<a class="popup-with-zoom-anim" href="#line"><img class="img-responsive motor-in" src="images/line2.jpg" alt="" style="height:90%; width:100%" >
+						<a class="popup-with-zoom-anim" href="#line"><img class="img-responsive motor-in" src="images/line2.jpg" alt="" style="height:324.11px; width:456px">
 							<div class="simple">
 									<h5>Line Following Robot</h5>
 								</div></a>
 					</div>
 					<div class="work-grid1">
-						<a class="popup-with-zoom-anim" href="#snakes"><img class="img-responsive motor-in" src="images/snake.jpg" alt="" >
+						<a class="popup-with-zoom-anim" href="#snakes"><img class="img-responsive motor-in" src="images/snake.jpg" alt="" style="height:324.11px; width:456px">
 							<div class="simple">
 									<h5>Snakes</h5>
 								</div></a>
 					</div>
 					<div class="work-grid">
-						<a class="popup-with-zoom-anim" href="#obstacle"><img class="img-responsive motor-in" src="images/pic.jpg" alt="" >
+						<a class="popup-with-zoom-anim" href="#obstacle"><img class="img-responsive motor-in" src="images/car2.jpg" alt="" style="height:324.11px; width:456px">
 							<div class="simple">
 						    	<h5>Obstacle Avoiding Robot</h5>
 						    </div></a>
 					</div>
 					<div class="work-grid1">
-						<a class="popup-with-zoom-anim" href="#vendingmaching"><img class="img-responsive motor-in" src="images/vend1.jpg" alt="" >
+						<a class="popup-with-zoom-anim" href="#vendingmaching"><img class="img-responsive motor-in" src="images/vend1.jpg" alt="" style="height:324.11px; width:456px">
 							<div class="simple">
 									<h5>Vending Machine</h5>
+								</div></a>
+					</div>
+					<div class="work-grid">
+						<a class="popup-with-zoom-anim" href="#truss"><img class="img-responsive motor-in" src="images/truss1.jpg" alt="" style="height:324.11px; width:456px">
+							<div class="simple">
+									<h5>Cantilever Truss Design</h5>
+								</div></a>
+					</div>
+					<div class="work-grid1">
+						<a class="popup-with-zoom-anim" href="#distance"><img class="img-responsive motor-in" src="images/dist1.jpg" alt="" style="height:324.11px; width:456px">
+							<div class="simple">
+									<h5>Distance Measuring Device</h5>
 								</div></a>
 					</div>
 					<div class="clearfix"> </div>
@@ -216,25 +228,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</script>
 					<div class="slider">
 					<ul class="rslides" id="slider3">
-						<li><img src="images/ba1.jpg" alt=""></li>
-						<li><img src="images/ba1.jpg" alt=""></li>
-						<li><img src="images/ba1.jpg" alt=""></li>
+						<li><img src="images/obstaclecar.gif" alt="" style="height:600px"></li>
+						<li><img src="images/car1.jpg" alt=""></li>
+						<li><img src="images/car2.jpg" alt=""></li>
+						<li><img src="images/car3.jpg" alt=""></li>
+						<li><img src="images/car4.jpg" alt=""></li>
+						<li><img src="images/car5.jpg" alt=""></li>
 					</ul>
 					</div>
 					<div class="sit">
-						<h6>Typography</h6>
 					<div class="sit-in">
-						<h4 class="prome">Promesas de Tierra</h4>
+						<h4 class="prome">Obstacle Avoidance Car</h4>
 						<ul class="circle-in">
-							<li>HTML 5</li>
-							<li>CSS3</li>
-							<li>JQUREY</li>
+							<li>C</li>
+							<li>Arduino</li>
 						</ul>
 					<div class="clearfix"> </div>
 					</div>
 					<div class="screen">
-						<span>Creating bonds away from our screens</span>
-						<p>There were several roads near by, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road-bed. The sun shone bright and the birds sang sweetly, and Dorothy did not feel nearly so bad as you might think a little girl would who had been suddenly whisked away from her own country and set down in the midst of a strange land.</p>
+						<span>Description</span>
+						<p>The obstacle avoidance car was made as a personal pet project out of general interest for automation and to learn how to interact with sensors and actuators, and to increase my proficiency in C. The car consists of two servos, a DC motor, a sonar sensor, and an Arduino microcontroller. An h-bridge is used to drive the motor since the Arduino does not have enough power to drive it. Speed control of the motor was achieved through the use of PWM signals. The car uses an ultrasonic sensor, mounted on top of a servo, to detect objects in front of the car. If an object is detected, the servo turns left and right so that the sensor can measure distances to objects in both directions. The car then turns in the direction where the distance to an object is the furthest. All in all, the obstacle avoidance car project was a success and the car was able to navigate around the house without any intervention.  </p>
 					</div>
 					</div>
 				</div>
@@ -273,6 +286,81 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="screen">
 						<span>Description</span>
 						<p>Smart Vendor is a vending machine built using LEGO Mindstorms. The machine was created for a first year design project. The machine used different sensors, including a sonar sensor, a push button, and a color sensor in order to vend objects to users. The sonar sensor was used to detect if there is a person standing in front of the machine. If an object was detected, the machine would turn on. The user would then select an item from the menu, and insert the correct amount of currency in the form of colored poker chips, each of which had different values. The machine used a color sensor to detect which color was inserted and calculate whether the user inserted the right amount of currency. The machine would then use a custom built gantry system to push the object out of the shelf and into the dispensing window. The machine was programmed using Robot-C, a C based language with additional support for robot specific functions. The robot’s gantry system was designed using SOLIDWORKS and then manufactured using scrap metal based on the SOLIDWORKS design.</p>
+					</div>
+					</div>
+				</div>
+				<div id="truss" class="mfp-hide innercontent">
+				<!---->
+				<script src="js/responsiveslides.min.js"></script>
+			<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+				// Slideshow 1
+				$("#slider5").responsiveSlides({
+				 auto: true,
+				 nav: true,
+				 speed: 500,
+				 namespace: "callbacks",
+				});
+			});
+			</script>
+					<div class="slider">
+					<ul class="rslides" id="slider5">
+						<li><img src="images/truss1.jpg" alt="" style="height:600px"></li>
+						<li><img src="images/truss2.jpg" alt="" style="height:600px"></li>
+						<li><img src="images/truss3.jpg" alt="" style="height:600px"></li>
+					</ul>
+					</div>
+					<div class="sit">
+					<div class="sit-in">
+						<h4 class="prome">Cantilever Truss</h4>
+						<ul class="circle-in">
+							<li>SolidWorks</li>
+						</ul>
+					<div class="clearfix"> </div>
+					</div>
+					<div class="screen">
+						<span>Description</span>
+						<p>A cantilever truss was designed for a second year failure analysis course. The purpose of the truss was to hold at least 70 times its own weight. Initially, several different designs were drawn on paper and the stresses across each of the members was calculated to see if the member would fail. The top 3 designs (designs with the lowest weight and where no member failed when the load was 70 times its own weight) were analyzed with more detail, and finally a design was selected. The selected design was then implemented in SOLIDWORKS to figure out the correct dimensions, and then it was built out of wood based on the dimensions from SOLIDWORKS. After intensive testing, the design was optimized such that the members that did not have any stress were shaved/filed down, while members that would fail first were reinforced. During the final competition, our design won second place since it was able to hold 367 times its own weight before breaking. </p>
+					</div>
+					</div>
+				</div>
+				<div id="distance" class="mfp-hide innercontent">
+				<!---->
+				<script src="js/responsiveslides.min.js"></script>
+			<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+				// Slideshow 1
+				$("#slider6").responsiveSlides({
+				 auto: true,
+				 nav: true,
+				 speed: 500,
+				 namespace: "callbacks",
+				});
+			});
+			</script>
+					<div class="slider">
+					<ul class="rslides" id="slider6">
+						<li><img src="images/dist1.jpg" alt="" style="height:600px"></li>
+						<li><img src="images/dist2.jpg" alt="" style="height:600px"></li>
+					</ul>
+					</div>
+					<div class="sit">
+					<div class="sit-in">
+						<h4 class="prome">Distance Measuring Device</h4>
+						<ul class="circle-in">
+							<li>Arduino</li>
+							<li>C</li>
+							<li>Python</li>
+							<li>Numpy</li>
+							<li>Statistics</li>
+						</ul>
+					<div class="clearfix"> </div>
+					</div>
+					<div class="screen">
+						<span>Description</span>
+						<p>The distance measuring device is a device that uses an ultrasonic sensor to measure the length of an object. The object is placed inside a box, and the end of the box is moved so that it is flushed to the object. The sensor then reads the distance to the edge, which gives the length of the object. The device is made up of an ultrasonic sensor and an Arduino microcontroller. In order to convert the sonar sensor’s output to a length in cm, a polynomial equation was generated measuring actual distances and comparing them to the sensor’s output, and then curve fitting the two values. Once the polynomial was developed, a script was developed to turn the sensor’s output into a cm value using the polynomial. Python’s numpy library was used to develop the polynomial. The device was able to measure objects to an accuracy of 87%.</p>
 					</div>
 					</div>
 				</div>
@@ -439,22 +527,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="container">
 				<h3>CONTACT</h3>
 				<P>Maybe you're here just to say '<span>Hi</span>'?</p>
-				<form>
-					<div class="contact-grid">
-						<div class="col-md-6 contact-us">
-							<input type="text" value="Name*" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Name*';}">
-						</div>
-						<div class="col-md-6 contact-us">
-							<input type="text" value="Email*" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email*';}">
-						</div>
-						<div class="clearfix"> </div>
+					<div>
+						<a href="mailto:ppatodar@uwaterloo.ca">ppatodar@uwaterloo.ca</a>
 					</div>
-					<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message*';}">Message*</textarea>
-					<div class="send ">
-						<input type="submit" value="SEND NOW" >
-					</div>
-				</form>
-
 				</div>
 			</div>
 	</div>
@@ -478,7 +553,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 		};
 							*/
 
-							$().UItoTop({ easingType: 'easeOutQuart' });
+							// $().UItoTop({ easingType: 'easeOutQuart' });
 
 						});
 					</script>

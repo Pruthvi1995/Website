@@ -1,5 +1,5 @@
 /* Styles for dialog window */
-	#snakes, #line, #obstacle, #vendingmaching {
+	#snakes, #line, #obstacle, #vendingmaching,#truss, #distance {
 	padding:20px;
 	text-align: left;
 	max-width: 70%;
@@ -292,7 +292,7 @@ a.near-right:hover{
 	padding: 2em 0 11em;
 }
 @media all and (max-width:1024px){
-#snakes, #line, #obstacle, #vendingmaching {
+#snakes, #line, #obstacle, #vendingmaching, #truss, #distance {
 	max-width: 90%;
 }
 }
@@ -326,7 +326,7 @@ h4.prome {
 }
 }
 @media all and (max-width:320px){
-#snakes, #line, #obstacle, #vendingmaching {
+#snakes, #line, #obstacle, #vendingmaching, #truss, #distance {
 	max-width: 100%;
 }
 h4.prome {
